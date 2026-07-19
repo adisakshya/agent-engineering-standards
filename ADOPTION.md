@@ -11,7 +11,10 @@ cp path/to/agent-engineering-standards/templates/AGENTS.md ./AGENTS.md   # if us
 
 # 2. Copy the guideline library — required, not optional.
 #    Templates reference these files by relative path (agent-guidelines/...).
-cp -r path/to/agent-engineering-standards/agent-guidelines ./agent-guidelines
+#    This form copies contents into the destination and is safe to rerun
+#    even if ./agent-guidelines already exists (it won't nest directories).
+mkdir -p ./agent-guidelines
+cp -r path/to/agent-engineering-standards/agent-guidelines/. ./agent-guidelines/
 
 # 3. Fill in Section 8 (REPO-SPECIFIC) in each copied template.
 #    See templates/LOCAL-ADDITIONS.md in the central repo for a worked example.

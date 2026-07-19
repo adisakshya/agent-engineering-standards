@@ -21,4 +21,4 @@ Directives for branch naming and lifecycle.
 ## Cleanup
 
 - Delete branches after merge when the repository's convention calls for it.
-- Never delete a branch that has not been merged without explicit user confirmation (see `agent-conduct.md` — destructive-action boundaries).
+- Never delete a branch that has not been merged without explicit user confirmation (see `../agent-conduct.md` — destructive-action boundaries).
