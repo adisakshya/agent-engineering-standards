@@ -53,10 +53,10 @@ Use this exact format for every PR description or completion comment. Omit any s
 <one paragraph or bullet points, decision-oriented, no file list, no restating the task>
 
 ## Test Plan
-<what was actually run and what it returned — only checks actually executed>
+<what was tested and how, and what was actually run and what it returned — only checks actually executed>
 
 ## Review Notes
-<anything requiring developer/reviewer action or awareness — omit if empty>
+<anything requiring developer action or awareness, and any context specifically useful to a human reviewer — omit if empty>
 ```
 
 Never:

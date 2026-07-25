@@ -9,10 +9,10 @@ Canonical, exact format for any completion comment an agent posts (PR descriptio
 <one paragraph or bullet points>
 
 ## Test Plan
-<what was run, what it returned>
+<what was tested and how, and what was actually run and what it returned>
 
 ## Review Notes
-<anything requiring developer/reviewer action or awareness>
+<anything requiring developer action or awareness, and any context specifically useful to a human reviewer>
 ```
 
 Omit any section entirely when there is nothing to say for it. Do not write "N/A" or leave a section header with no content.
@@ -28,13 +28,13 @@ Omit any section entirely when there is nothing to say for it. Do not write "N/A
 
 ### Test Plan
 - Section must be named exactly "Test Plan".
-- State exactly what was actually run (tests, lint, build, manual check) and what it returned — concrete steps, commands, or scenarios actually exercised, not a bare assertion that "tests pass".
+- State what was tested and how, and what was actually run (tests, lint, build, manual check) and what it returned — concrete steps, commands, or scenarios actually exercised, not a bare assertion that "tests pass".
 - Only list checks that were actually executed.
 - Never claim a check passed without having run it and observed the result.
 - Omit entirely if there is genuinely nothing to test. If testing was expected but nothing was done, say so plainly rather than omitting the section silently.
 
 ### Review Notes
-- Anything requiring developer/reviewer action or awareness: follow-up work, known limitations, manual steps still needed, risk callouts, risky areas, design tradeoffs, or anything a reviewer should pay special attention to.
+- Anything requiring developer action or awareness: follow-up work, known limitations, manual steps still needed, risk callouts, risky areas, design tradeoffs, or anything a reviewer should pay special attention to — and any context specifically useful to a human reviewer.
 - Omit entirely if there is nothing to note.
 
 ## Never
