@@ -52,24 +52,18 @@ Use this exact format for every PR description or completion comment. Omit any s
 ## Summary
 <one paragraph or bullet points, decision-oriented, no file list, no restating the task>
 
-## Validation
+## Test Plan
 <what was actually run and what it returned — only checks actually executed>
 
-## Test Plan
-<what was tested and how — concrete steps or commands, not just "tests pass">
-
-## Notes
-<anything requiring developer action or awareness — omit if empty>
-
 ## Review Notes
-<context specifically useful to a human reviewer — anything they should pay special attention to; omit if empty>
+<anything requiring developer/reviewer action or awareness — omit if empty>
 ```
 
 Never:
 - Repeat the task description back to the user.
 - Give a file-by-file walkthrough of the diff.
 - Pad with unnecessary detail to appear thorough.
-- Claim untested work is validated — this applies to the Test Plan section as well as Validation.
+- Claim untested work is validated — this applies to the Test Plan section.
 
 Full rules: agent-guidelines/pr-completion-comments.md
 
