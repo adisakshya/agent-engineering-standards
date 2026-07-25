@@ -2,6 +2,11 @@
 
 Directives for producing and handling code review feedback.
 
+## Regression Check
+
+- Every review must check whether the change breaks anything that was previously working, not just assess the new code in isolation.
+- Check affected call sites, dependent tests, and adjacent behavior for regressions before approving.
+
 ## Findings
 
 - Every finding must name a specific location (`file:line`).

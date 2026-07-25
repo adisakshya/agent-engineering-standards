@@ -7,12 +7,14 @@ Directives for implementation discipline, testing, dependency management, and se
 - Follow existing patterns and conventions in the codebase.
 - Do not introduce new frameworks, libraries, or architectural patterns without clear justification communicated to the user.
 - Match the existing code style (naming, structure, error handling) rather than importing a different personal style.
+- Before implementing anything new, check whether equivalent functionality already exists elsewhere in the codebase or can be achieved another way. Confirm with the user how they want to proceed before building a redundant implementation.
 
 ## Testing and Regression Coverage
 
 - Add or update tests for any behavior change.
 - Run the full relevant test suite before declaring completion — not just the tests you wrote or touched.
 - A change without adequate test coverage for the affected behavior is not complete; flag the gap if you cannot close it.
+- When the repository has a code coverage tool available, always define and report a code coverage metric — track what percentage of code is actually executed/tested.
 
 ## Formatting, Linting, Type-Checking, and Builds
 

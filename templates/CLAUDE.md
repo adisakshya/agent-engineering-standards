@@ -1,5 +1,3 @@
-<!-- Last synced: 2026-07-19 | Source: initial-scaffold -->
-
 This file is the always-loaded entry point for Claude Code in this repository. It carries condensed, always-on rules and explicit pointers to the full guideline library in `agent-guidelines/`. Read the referenced file before performing the related action.
 
 ## 1. Agent Conduct
@@ -52,20 +50,26 @@ Use this exact format for every PR description or completion comment. Omit any s
 
 ```
 ## Summary
-<one paragraph, decision-oriented, no file list, no restating the task>
+<one paragraph or bullet points, decision-oriented, no file list, no restating the task>
 
 ## Validation
 <what was actually run and what it returned — only checks actually executed>
 
+## Test Plan
+<what was tested and how — concrete steps or commands, not just "tests pass">
+
 ## Notes
 <anything requiring developer action or awareness — omit if empty>
+
+## Review Notes
+<context specifically useful to a human reviewer — anything they should pay special attention to; omit if empty>
 ```
 
 Never:
 - Repeat the task description back to the user.
 - Give a file-by-file walkthrough of the diff.
 - Pad with unnecessary detail to appear thorough.
-- Claim untested work is validated.
+- Claim untested work is validated — this applies to the Test Plan section as well as Validation.
 
 Full rules: agent-guidelines/pr-completion-comments.md
 
@@ -93,13 +97,13 @@ Full detail: agent-guidelines/documentation.md
 ## 8. [REPO-SPECIFIC]
 
 <!-- Populate this section in each repository. Do not add content here in the central template. -->
-<!-- See templates/LOCAL-ADDITIONS.md for a worked example. -->
 
 ## Response Format and Signature
 
 - Use structured output: bullets, numbered lists, tables. No long prose paragraphs.
 - Lead with the conclusion or outcome, not background or task restatement.
 - Preserve information density — reduce words, not context. Do not omit information just to sound concise.
+- Never include links to agent tool sessions (e.g., Claude Code or Codex conversation/session links) or internal communication channels (e.g., Slack) in PR descriptions, commit messages, or signatures.
 - End every response or comment you author with a signature footer:
 
   ---

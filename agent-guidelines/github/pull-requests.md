@@ -7,6 +7,7 @@ Directives for PR structure, size, and — most importantly — mandatory issue 
 - Every PR must reference an issue (e.g., `Closes #N`, `Fixes #N`, `Refs #N`).
 - If no issue exists for the change being made, ask the user to create one before opening the PR.
 - Never open an issue-less PR silently. This rule has no exceptions in normal workflow.
+- If an issue requires multiple PRs to fully resolve, reference the same parent issue from each partial PR (e.g., `Refs #N`, reserving `Closes #N`/`Fixes #N` for the PR that finally resolves it) so all partial PRs stay linked back to it.
 
 ## Title
 
@@ -18,11 +19,13 @@ Directives for PR structure, size, and — most importantly — mandatory issue 
 - Why.
 - How to validate/test.
 - Linked issue (see above — not optional).
+- Never include links to Claude Code / Codex session URLs, or Slack/internal channel links, anywhere in the PR — title, description, or comments.
 
 ## Size
 
 - One logical change per PR.
 - Split large or multi-concern changes into multiple PRs rather than bundling them.
+- Confirm with the user before splitting a change into multiple PRs.
 
 ## Draft Status
 

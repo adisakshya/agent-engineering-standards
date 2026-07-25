@@ -23,6 +23,11 @@ Directives for keeping documentation accurate and aligned with actual behavior.
 - Write a short ADR for significant architectural decisions only when the repository already has an established ADR convention or directory.
 - Do not introduce ADRs into a repository that doesn't use them.
 
+## Code-Level Documentation
+
+- Cover every public/exported module, function, and API surface with adequate comments or docstrings — do not leave a public interface unexplained.
+- This is not a mandate to comment every line; internal/private implementation details still follow the "only comment what isn't obvious from the code" principle.
+
 ## General Principle
 
 - Keep documentation aligned with observable behavior, not internal implementation details.

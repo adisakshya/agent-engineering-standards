@@ -6,6 +6,7 @@ Directives for authoring and modifying CI workflows.
 
 - Keep workflows minimal, single-purpose, and clearly named.
 - Prefer several small, focused workflows over one large multi-purpose workflow.
+- Define dependencies between workflows where applicable (e.g., a build workflow should not run if a lint/syntax-check workflow has already failed) to avoid wasting CI minutes on doomed runs.
 
 ## Least Privilege
 

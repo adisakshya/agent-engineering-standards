@@ -1,4 +1,4 @@
-# agent-engineering-standards
+# Agent Engineering Standards
 
 Governed source of truth for shared engineering standards followed by AI coding agents (Claude Code, Codex) across repositories. The primary audience for every file in this repo is the agents themselves — content is written as concise, actionable directives, not human-facing explanatory prose.
 
@@ -21,7 +21,6 @@ This split means guideline content lives in exactly one place. The templates ref
 agent-engineering-standards/
 ├── README.md
 ├── LICENSE
-├── ADOPTION.md                        # Full copy/reference/override/update workflow
 ├── agent-guidelines/
 │   ├── agent-conduct.md
 │   ├── scope-and-minimalism.md
@@ -37,12 +36,7 @@ agent-engineering-standards/
 │       └── github-actions.md
 └── templates/
     ├── CLAUDE.md                      # Always-loaded entry point for Claude Code
-    ├── AGENTS.md                      # Always-loaded entry point for Codex
-    └── LOCAL-ADDITIONS.md             # Worked example for a repo's local section
+    └── AGENTS.md                      # Always-loaded entry point for Codex
 ```
 
-## Adoption Quickstart
-
-Copy `templates/CLAUDE.md` and/or `templates/AGENTS.md`, plus the entire `agent-guidelines/` directory, into the target repository's root, then fill in each template's repository-specific section before committing. Adoption is a deliberate manual copy in this version — there is no auto-sync into consumer repositories.
-
-See [`ADOPTION.md`](./ADOPTION.md) for the full copy, override, and update workflow, including how to pull in future changes from this repository.
+Repository adoption instructions (how to bring these standards into a consumer repository) will be provided separately.
